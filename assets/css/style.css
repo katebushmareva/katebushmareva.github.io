@@ -1,0 +1,481 @@
+html, body, header {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fade-out {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes slide-in-left {
+  from {left: -1200px;}
+  to {left: 40px;}
+}
+
+@keyframes slide-in-right {
+  from {left: 1200px;}
+  to {left: 0px;}
+}
+
+@keyframes slide-in-logo {
+  from {left: 1500px;}
+  to {left: 0; margin: 0 auto;}
+}
+
+@keyframes slide-out-logo {
+  from {left: 0; margin: 0 auto;}
+  to {left: 1500px;}
+}
+
+@keyframes slide-out-right {
+  from {left: 0px;}
+  to {left: 1200px;}
+}
+
+@keyframes slide-out-left {
+  from {left: 40px;}
+  to {left: -1200px;}
+}
+
+/* LOCAL FONTS */
+
+@font-face {
+    font-family: 'cutelove';
+    src: url('cutelove.ttf');
+}
+
+#bg {
+  height: 2500px;
+}
+
+#content-bg {
+  width: 1280px;
+  object-fit: fill;
+  overflow-x: hidden;
+  background-image: url("bg-small.png");
+  position: relative;
+}
+
+#banner {
+  color:black;
+  width: 1280px;
+  height: 720px;
+  position: relative;
+  z-index: 2;
+}
+
+video {
+  z-index: 3;
+}
+
+#banner, #banner-main, #welcome-text {
+  overflow-y: hidden;
+}
+
+#welcome-text, video {
+  margin: 0 auto;
+  position: absolute;
+}
+
+#welcome-text {
+  opacity: 0;
+  animation: fade-in;
+  animation-duration: 2s;
+  animation-delay: .1s;
+	animation-fill-mode: forwards;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#row-0 {
+  height: 300px;
+}
+#logo-main {
+  top: 30px;
+  width:300px;
+  left: 1500px;
+  position: relative;
+}
+
+.photo {
+  height: auto;
+  width: 600px;
+  box-shadow: 5px 4px 4px rgb(41, 41, 41, 0.4);
+}
+
+#photo-1 {
+  height: 500px;
+  width: auto;
+  object-fit: fill;
+  background-image: url("photo-1.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 1s;
+}
+
+#photo-1:hover {
+  background-image: url("photo-1-hover.png");
+  cursor: pointer;
+}
+
+#photo-2 {
+  height: 500px;
+  width: auto;
+  object-fit: fill;
+  background-image: url("photo-2.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 1s;
+}
+
+#photo-2:hover {
+  background-image: url("photo-2-hover.png");
+  cursor: pointer;
+}
+
+#photo-3 {
+  height: 500px;
+  width: auto;
+  object-fit: fill;
+  background-image: url("photo-3.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 1s;
+  z-index: 15;
+}
+
+#photo-3:hover {
+  background-image: url("photo-3-hover.png");
+  cursor: pointer;
+}
+
+#photo-4 {
+  height: 500px;
+  width: auto;
+  object-fit: fill;
+  background-image: url("photo-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+#logo {
+  width: 300px;
+  top: 225px;
+  opacity: 0;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  margin: 20px;
+}
+
+#card-1 {
+  transform: rotate(-1.86deg);
+  top: 20px;
+  left: -1200px;
+}
+
+#card-2 {
+  top:5px;
+  transform: rotate(3.11deg);
+  z-index: 40;
+  left: 1200px;
+}
+
+#card-3 {
+  transform: rotate(-3.4deg);
+  z-index: 15;
+  left: -1200px;
+}
+
+#card-4 {
+  left: 1200px;
+}
+
+.card {
+  position: relative;
+  width: 700px;
+}
+
+.card-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#card-text-1 {
+  bottom: -13px;
+  font-size: 24pt;
+  font-family: "cutelove";
+}
+
+#card-text-2 {
+  font-family: "Allura", cursive;
+  font-size: 28pt;
+  top: 475px;
+}
+
+#card-text-3 {
+  font-family: "Bradley Hand ITC";
+  font-size: 24pt;
+  white-space: nowrap;
+  overflow: hidden;
+  top: 477px;
+}
+
+#card-text-4 {
+  font-family: "Coiny", cursive;
+  font-size: 32pt;
+  top: 475px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #EF598F;
+}
+
+#card-text-4:hover {
+  cursor: pointer;
+}
+
+.info {
+  position: relative;
+}
+
+.info-bg {
+  position: absolute;
+}
+
+.info-text {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-text {
+  font-family: "Dongle", sans-serif;
+  font-size: 18pt;
+  color: #2F6B78;
+  position: absolute;
+  z-index: 500;
+  text-align: center;
+}
+
+#row-1 {
+  top: 100px;
+}
+
+#circle1 {
+  width: 140px;
+}
+
+#circle2 {
+  width: 260px;
+}
+
+#circle3 {
+  width: 340px;
+}
+
+#info-1 .info-name .info-text {
+  font-family: "cutelove";
+  font-size: 32pt;
+  transform: translate(-50%, -50%) rotate(5deg);
+  color: #EF598F;
+}
+
+#info-1 .info-name {
+  position: relative;
+  z-index: 300;
+  left: 595px;
+  top: 25px;
+  width: 200px;
+  text-align: center;
+  opacity: 0;
+}
+
+#info-1 .info-top {
+  z-index: 200;
+  position: absolute;
+  height: 100px;
+  width: auto;
+  left: 370px;
+  top: -30px;
+  opacity: 0;
+}
+
+#info-1 .info-bot {
+  z-index: 150;
+  position: absolute;
+  width: 500px;
+  left: 460px;
+  top: 160px;
+  opacity: 0;
+}
+
+#info-1 .info-top .info-text {
+  width: 250px;
+  top: 140px;
+}
+
+#info-1 .info-bot .info-text {
+  top: 170px;
+  width: 400px;
+}
+
+#circle4 {
+  width: 140px;
+}
+
+#circle5 {
+  width: 260px;
+}
+
+#circle6 {
+  width: 360px;
+}
+
+#info-2 .info-name .info-text {
+  font-family: "Allura", cursive;
+  font-size: 32pt;
+  transform: translate(-50%, -50%) rotate(5deg);
+  color: #EF598F;
+}
+
+#info-2 .info-name {
+  position: relative;
+  z-index: 300;
+  left: 510px;
+  top: 40px;
+  width: 200px;
+  text-align: center;
+  opacity: 0;
+}
+
+#info-2 .info-top {
+  z-index: 200;
+  position: absolute;
+  height: 100px;
+  width: auto;
+  left: 300px;
+  top: 0px;
+  transform: rotate(-6deg);
+  opacity: 0;
+}
+
+#info-2 .info-bot {
+  z-index: 150;
+  position: absolute;
+  width: 500px;
+  left: 440px;
+  top: 160px;
+  opacity: 0;
+}
+
+#info-2 .info-top .info-text {
+  width: 250px;
+  top: 140px;
+}
+
+#info-2 .info-bot .info-text {
+  top: 170px;
+  width: 400px;
+}
+
+#circle7 {
+  width: 140px;
+}
+
+#circle8 {
+  width: 260px;
+}
+
+#circle9 {
+  width: 360px;
+}
+
+#info-3 .info-name {
+  position: relative;
+  z-index: 300;
+  left: 50px;
+  top: 40px;
+  width: 200px;
+  text-align: center;
+  opacity: 0;
+}
+
+#info-3 .info-top {
+  z-index: 200;
+  position: absolute;
+  height: 100px;
+  width: auto;
+  left: 160px;
+  top: 0px;
+  transform: rotate(-6deg);
+  opacity: 0;
+}
+
+#info-3 .info-bot {
+  z-index: 150;
+  position: absolute;
+  width: 500px;
+  left: -30px;
+  top: 160px;
+  opacity: 0;
+}
+
+#info-3 .info-name .info-text {
+  font-family: "Bradley Hand ITC";
+  font-size: 32pt;
+  transform: translate(-50%, -50%) rotate(5deg);
+  color: #EF598F;
+  line-height: 30px;
+}
+
+#info-3 .info-top .info-text {
+  width: 250px;
+  top: 140px;
+}
+
+#info-3 .info-bot .info-text {
+  top: 190px;
+  width: 400px;
+}
+
+#row-3 {
+  top: 20px;
+}
