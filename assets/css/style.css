@@ -132,6 +132,7 @@ video {
 #photo-1:hover {
   background-image: url("photo-1-hover.png");
   cursor: pointer;
+  opacity: 1;
 }
 
 #photo-2 {
@@ -479,3 +480,14 @@ video {
 #row-3 {
   top: 20px;
 }
+
+/*#front-page-bg {
+  background-color: white;
+  height: 3000px;
+  width: 50000px;
+  position: relative;
+  z-index: 600;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
