@@ -401,7 +401,7 @@ video {
   z-index: 150;
   position: absolute;
   width: 500px;
-  left: 440px;
+  left: 448px;
   top: 160px;
   opacity: 0;
 }
@@ -443,7 +443,7 @@ video {
   position: absolute;
   height: 100px;
   width: auto;
-  left: 160px;
+  left: 175px;
   top: 0px;
   transform: rotate(-6deg);
   opacity: 0;
@@ -453,8 +453,8 @@ video {
   z-index: 150;
   position: absolute;
   width: 500px;
-  left: -30px;
-  top: 160px;
+  left: -45px;
+  top: 155px;
   opacity: 0;
 }
 
