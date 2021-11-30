@@ -5,9 +5,8 @@ html, body, header {
 
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
 }
-
+/*
 #cover {
   background-color: white;
   height:2000px;
@@ -15,6 +14,23 @@ body {
   z-index: 1000;
   position: relative;
 }
+
+#logo-entry {
+  position: absolute;
+  z-index: 630;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  top: 250px;
+  background-image: url("logo.svg");
+}
+
+#logo-entry:hover {
+  cursor: pointer;
+  background-image: url("logo-2.svg");
+} /*
 
 /* ANIMATIONS */
 
@@ -494,21 +510,4 @@ video {
 
 #row-3 {
   top: 20px;
-}
-
-#logo-entry {
-  position: absolute;
-  z-index: 630;
-  margin: 0 auto;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  top: 250px;
-  background-image: url("logo.svg");
-}
-
-#logo-entry:hover {
-  cursor: pointer;
-  background-image: url("logo-2.svg");
 }
